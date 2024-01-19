@@ -3,21 +3,29 @@
 자바에서 문자열은 String 데이터 타입으로 사용합니다. 내장 클래스로 java.lang 패키지에 포함되어 있습니다.
 
 1. String 생성
+
+문자열 변수의 생성은 String 클래스를 사용합니다.
 ```
 String name;
 ```
 
-2. String 객체 참조
+2. String 문자열 대입
+
+생성한 String 변수에 ""(큰따옴표)를 사용해서 문자 리터럴을 넣습니다. 이 때 주의할 것은 원하는 이름으로 지정한 변수는 스택 영역에 생성되고 ""(큰따옴표)으로 된 문자열 리터럴은 힙 영역에 String 객체로 생성됩니다. 스택영역의 변수가 힙 영역의 String 객체를 참조하고 있습니다.
 ```
 String name = "codeomni";
 ```
 
 3. String 생성과 동시에 참조
+
+String 변수도 생성과 동시에 객체를 참조할 수 있습니다.
 ```
 String name = "codeomni";
 ```
 
-4. new 연산자 객체 생성
+4. new 연산자 객체 
+
+new 연산자를 사용해서 String 객체를 생성할 수 있습니다.
 ```
 String name = new String("codeomni");
 ```
@@ -29,9 +37,9 @@ String name = new String("codeomni");
 == 비교 연산자의 결과로 =으로 생성한 경우 true, new으로 생성한 경우 false가 반환됩니다.
 생성된 객체에 상관없이 문자열의 내용을 비교하기 위해서는 equals() 메서드를 사용합니다.
 ```
-String name1 = "tistory";
-String name2 = "tistory";
-String name3 = new String("tistory");
+String name1 = "codeomni";
+String name2 = "codeomni";
+String name3 = new String("codeomni");
     	
 System.out.println(name1 == name2);		  // true
 System.out.println(name1 == name3);		  // false

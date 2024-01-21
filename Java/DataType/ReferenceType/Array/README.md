@@ -23,9 +23,27 @@ nullArray = new int[3];
 nullArray = null;
 ```
 
-x. 배열 new 연산자 생성
+3. 배열 new 연산자 생성
 
-x. 배열 길이
+배열 객체는 new 키워드를 사용해서 힙 영역에 동적으로 생성됩니다.
+```
+Stringp[] names = new String[]{"codeomni", "tistory"};
+```
+
+4. 배열 길이
+
+자바에서 배열의 길이는 length 속성을 사용하면 구할 수 있습니다. 생성 시 배열의 크기를 지정하면 length 속성은 해당 배열의 크기를 가집니다.
+```
+int[] numbers = new int[3];
+int length = numbers.length;
+System.out.println("배열의 길이: " + length);
+```
+배열이 null인 경우에 length 속성을 사용하면 NullPointerException이 발생합니다.
+```
+int[] nullArray = null;
+int length = nullArray.length;
+System.out.println(length); // NullPointerException 발생
+```
 
 x. 배열 복사
 

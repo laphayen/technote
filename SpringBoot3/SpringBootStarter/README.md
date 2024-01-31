@@ -12,7 +12,7 @@ spring-boot-starter-작업유형
 * spring-boot-starter-data-jpa: ORM을 사용하기 위한 인터페이스의 모음인 JPA를 더 쉽게 사용하기 위한 의존성 모음
 
 스프링 부트 스타터 목록
-J
+
 * JUnit: 자바 프로그래밍 언어용 단위 테스트 프레임워크
 * Spring Test & Spring boot Test: 스프링 부트 애플리케이션을 위한 통합 테스트 지원
 * AssertJ: 검증문을 작성하는 데 사용하는 라이브러리

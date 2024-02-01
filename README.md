@@ -34,6 +34,6 @@ cs, java, spring, openCV 인터뷰 준비 노트입니다.
 │   └── SpringBootStarter
 │       └── Test
 │           ├── GivenWhenThen
-│           └──JUnit
+│           └── JUnit
 └── README.md
 ```
